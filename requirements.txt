@@ -9,5 +9,3 @@ Flask-SQLAlchemy
 PyMySQL
 mysql
 mysql-connector
-mysql-connector-python
-mysql-connector-python-dd
