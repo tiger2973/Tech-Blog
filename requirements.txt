@@ -7,3 +7,4 @@ MarkupSafe
 Werkzeug
 gunicorn
 Flask-SQLAlchemy
+pymysql
