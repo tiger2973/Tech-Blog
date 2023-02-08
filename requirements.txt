@@ -7,4 +7,6 @@ MarkupSafe
 Werkzeug
 gunicorn
 Flask-SQLAlchemy
-python-mysqldb
+mysql-connector-python
+mysql-python
+mysqlclient
