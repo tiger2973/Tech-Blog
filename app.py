@@ -6,7 +6,8 @@ username = os.getenv("PLANETSCALE_DB_USERNAME")
 password = os.getenv("PLANETSCALE_DB_PASSWORD")
 host = os.getenv("PLANETSCALE_DB_HOST")
 db= os.getenv("PLANETSCALE_DB")
-app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://"+username+":"+password+"@"+host+"/"+db
+url = os.getenv("DATABASE_URL")
+app.config['SQLALCHEMY_DATABASE_URI'] = url
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
