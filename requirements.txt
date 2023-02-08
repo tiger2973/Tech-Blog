@@ -7,3 +7,4 @@ Werkzeug
 gunicorn
 Flask-SQLAlchemy
 PyMySQL
+MySQL-python
