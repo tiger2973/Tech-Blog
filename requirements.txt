@@ -3,9 +3,10 @@ Flask
 itsdangerous
 Jinja2
 MarkupSafe
+ConfigParser
 Werkzeug
 gunicorn
 Flask-SQLAlchemy
 PyMySQL
 MySQL-python
-ConfigParser
+
