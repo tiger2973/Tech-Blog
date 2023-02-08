@@ -8,3 +8,4 @@ gunicorn
 Flask-SQLAlchemy
 PyMySQL
 MySQL-python
+ConfigParser
