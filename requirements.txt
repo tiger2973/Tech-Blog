@@ -7,5 +7,3 @@ Werkzeug
 gunicorn
 Flask-SQLAlchemy
 PyMySQL
-mysql
-mysql-connector
