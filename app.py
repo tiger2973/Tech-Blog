@@ -4,7 +4,7 @@ from flask import *
 from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] =os.getenv("DATABASE_URL")
+app.config['SQLALCHEMY_DATABASE_URI'] = mysql+pymysql://pjse6thuvopf:************@us-east.connect.psdb.cloud/test?ssl={"rejectUnauthorized":true}
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
