@@ -2,10 +2,10 @@ import os
 from flask import *
 from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
-username = os.environ.get("PLANETSCALE_DB_USERNAME")
-password = os.environ.get("PLANETSCALE_DB_PASSWORD ")
-host = os.environ.get("PLANETSCALE_DB_HOST")
-db= os.environ.get("PLANETSCALE_DB")
+username = os.getenv("PLANETSCALE_DB_USERNAME")
+password = os.getenv("PLANETSCALE_DB_PASSWORD")
+host = os.getenv("PLANETSCALE_DB_HOST")
+db= os.getenv("PLANETSCALE_DB")
 app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://"+username+":"+password+"@"+host+"/"+db
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
