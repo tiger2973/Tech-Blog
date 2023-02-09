@@ -6,4 +6,4 @@ ConfigParser
 Werkzeug
 gunicorn
 Flask-SQLAlchemy
-python-dev-tools
+pypi
