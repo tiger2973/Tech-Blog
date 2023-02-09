@@ -29,7 +29,7 @@ def about():
 
 
 @app.route("/contact")
-def about():
+def contact():
     return render_template('contact.html')
 
 @app.route("/oncontact", methods = ['GET', 'POST'])
