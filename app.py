@@ -27,15 +27,20 @@ def about():
     return render_template('about.html')
 
 
-@app.route("/contact", methods = ['GET', 'POST'])
-def contact():
+
+@app.route("/contact")
+def about():
+    return render_template('contact.html')
+
+@app.route("/oncontact", methods = ['GET', 'POST'])
+def oncontact():
     if(request.method=='POST'):
         '''Add entry to the database'''
         name = request.form.get('name')
         email = request.form.get('email')
         phone = request.form.get('phone')
         message = request.form.get('message')
-        entry = demo(name=name, phone = phone, message = message,email = email )
+        entry = demo(name=name, phone = phone, message = message,email = email)
         db.session.add(entry)
         db.session.commit()
         Demos = demo.query.all()
