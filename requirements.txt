@@ -8,4 +8,4 @@ Werkzeug
 gunicorn
 Flask-SQLAlchemy
 PyMySQL
-mysqlclient‑1.4.6‑cp39‑cp39‑win_amd64.whl
+mysqlclient-1.4.6-cp39-cp39-win32.whl
