@@ -9,4 +9,4 @@ gunicorn
 Flask-SQLAlchemy
 PyMySQL
 mysql-connector-python
-mysql
+python3.9-dev build-essential
