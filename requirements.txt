@@ -9,4 +9,4 @@ gunicorn
 Flask-SQLAlchemy
 pypi
 pymysql
-MySQL_python-1.2.5-cp27-none-win32.whl
+mysqlclient-1.4.6-cp39-cp39-win32.whl
