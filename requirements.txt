@@ -1,5 +1,6 @@
 click
 Flask
+wheel
 Jinja2
 MarkupSafe
 ConfigParser
