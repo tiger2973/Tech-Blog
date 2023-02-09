@@ -1,12 +1,9 @@
 click
 Flask
-itsdangerous
 Jinja2
 MarkupSafe
 ConfigParser
 Werkzeug
 gunicorn
 Flask-SQLAlchemy
-PyMySQL
-mysql-connector-python
 python-dev-tools
