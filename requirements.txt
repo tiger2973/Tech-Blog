@@ -7,4 +7,4 @@ Werkzeug
 gunicorn
 Flask-SQLAlchemy
 pypi
-mysqlclient
+pymysql
