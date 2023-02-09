@@ -1,5 +1,6 @@
 import os
 from flask import *
+import pymysql,mysqldb
 from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 
