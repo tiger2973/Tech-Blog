@@ -43,9 +43,6 @@ def oncontact():
         entry = demo(name=name, phone = phone, message = message,email = email)
         db.session.add(entry)
         db.session.commit()
-        Demos = demo.query.all()
-        for i in Demos:
-            print(i.name)
     return render_template('contact.html')
 
 @app.route("/post")
