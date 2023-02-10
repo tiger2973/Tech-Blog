@@ -40,7 +40,7 @@ try:
             email = request.form.get('email')
             phone = request.form.get('phone')
             message = request.form.get('message')
-            entry = demo(name=name, phone = phone, message = message,email = email)
+            entry = demo(name=form.name.data, phone = form.phone.data, message = form.message.data,email = form.email.data)
             db.session.add(entry)
             db.session.commit()
         return render_template('contact.html')
