@@ -35,12 +35,7 @@ try:
     @app.route("/oncontact", methods = ['GET', 'POST'])
     def oncontact():
         if(request.method=='POST'):
-            '''Add entry to the database'''
-            name = request.form.get('name')
-            email = request.form.get('email')
-            phone = request.form.get('phone')
-            message = request.form.get('message')
-            entry = demo(name=form.name.data, phone = form.phone.data, message = form.message.data,email = form.email.data)
+            entry = demo(name= request.form.get('name'), phone = request.form.get('email'), message = request.form.get('phone'),email = request.form.get('message'))
             db.session.add(entry)
             db.session.commit()
         return render_template('contact.html')
